@@ -1146,3 +1146,116 @@ footer {
     padding: 2rem 1.5rem;
   }
 }
+/* ─── ACCESSIBILITY CONTRAST FIXES ─── */
+.hcard-l {
+  color: #aaa;
+}
+.exp-period {
+  color: #aaa;
+}
+.edu-deg {
+  color: #aaa;
+}
+.edu-courses {
+  color: #aaa;
+}
+.proj-metric small {
+  color: #aaa;
+}
+.phc-metric small {
+  color: #aaa;
+}
+.phc-desc {
+  color: #ccc;
+}
+.proj-card p {
+  color: #ccc;
+}
+.exp-bullets li {
+  color: #ccc;
+}
+.skills-sub {
+  color: #ccc;
+}
+.sidebar-edu-item {
+  color: #aaa;
+}
+
+/* ─── CONTRAST FIXES V2 ─── */
+.edu-card-body p {
+  color: #ff6b6b;
+}
+.hcard-l {
+  color: #bbb;
+}
+.exp-period {
+  color: #bbb;
+}
+.edu-deg {
+  color: #bbb;
+}
+.edu-courses {
+  color: #bbb;
+}
+.sidebar-edu-item {
+  color: #bbb;
+}
+.proj-tech span {
+  color: #ccc;
+}
+.exp-tags span {
+  color: #ccc;
+}
+.phc-tech span {
+  color: #eee;
+}
+.skill-tags span {
+  color: #ddd;
+}
+
+/* ─── CONTRAST FIXES V3 ─── */
+.proj-num {
+  color: #666;
+}
+.proj-link {
+  color: #ff4d4d;
+}
+.proj-link.no-link {
+  color: #888;
+}
+.footer-inner {
+  color: #888;
+}
+.footer-right {
+  color: #888;
+}
+
+/* ─── CONTRAST FIXES V4 ─── */
+.proj-card h3 span {
+  color: #ff6b6b;
+}
+.proj-num {
+  color: #777;
+}
+.proj-link.no-link {
+  color: #999;
+}
+.proj-link.no-link i {
+  color: #999;
+}
+.sidebar-role {
+  color: #ff6b6b;
+}
+.hcard-l {
+  color: #bbb;
+  font-size: 0.7rem;
+}
+.proj-metric small {
+  color: #bbb;
+}
+
+/* ─── CONTRAST FIXES V5 ─── */
+.edu-deg {
+  color: #bbb;
+  font-size: 0.72rem;
+}
