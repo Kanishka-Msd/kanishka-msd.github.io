@@ -223,7 +223,6 @@
             ><span>Agile/Scrum</span>
           </div>
         </div>
-
         <div class="exp-card" data-aos>
           <div class="exp-card-top">
             <div class="exp-logo v">V</div>
@@ -261,26 +260,38 @@
       <!-- EDUCATION -->
       <div class="section-label" style="margin-top: 3rem">Education</div>
       <div class="edu-row">
-        <div class="edu-card" data-aos>
+        <!-- Education card with accordion -->
+        <div class="edu-card accordion-card" data-aos>
           <div class="edu-card-num">M.S.</div>
           <div class="edu-card-body">
-            <h3>Portland State University</h3>
+            <div class="accordion-header">
+              <h3>Portland State University</h3>
+              <i class="fas fa-chevron-down accordion-icon"></i>
+            </div>
             <p>Computer Science · GPA 3.8</p>
             <span>Sep 2024 – Present</span>
-            <div class="edu-courses">
-              AI · Machine Learning · LLMs · Data Engineering · Software
-              Engineering
+            <div class="accordion-content">
+              <div class="edu-courses">
+                AI · Machine Learning · LLMs · Data Engineering · Software
+                Engineering
+              </div>
             </div>
           </div>
         </div>
-        <div class="edu-card" data-aos>
+
+        <div class="edu-card accordion-card" data-aos>
           <div class="edu-card-num">B.Tech</div>
           <div class="edu-card-body">
-            <h3>Anna University</h3>
+            <div class="accordion-header">
+              <h3>Anna University</h3>
+              <i class="fas fa-chevron-down accordion-icon"></i>
+            </div>
             <p>Information Technology · GPA 3.5</p>
             <span>Jun 2020 – May 2024</span>
-            <div class="edu-courses">
-              DSA · Agile · Database Systems · OOP using Python
+            <div class="accordion-content">
+              <div class="edu-courses">
+                DSA · Agile · Database Systems · OOP using Python
+              </div>
             </div>
           </div>
         </div>
@@ -288,8 +299,102 @@
     </section>
 
     <!-- PROJECTS -->
-    <section id="projects">
-      <h2>Featured Work</h2>
+    <section id="projects" class="content-section">
+      <div class="section-label">Featured Work</div>
+
+      <!-- Featured project card -->
+      <div class="project-hero-card" data-aos>
+        <div class="phc-overlay"></div>
+        <div class="phc-content">
+          <div class="phc-tag">Featured Project</div>
+          <h2 class="phc-title">
+            MLOps Platform<br /><span>with Auto-Retraining</span>
+          </h2>
+          <p class="phc-desc">
+            Production-grade MLOps platform managing the complete ML lifecycle —
+            data versioning, experiment tracking, automated deployment, and
+            drift monitoring. Deployed with zero downtime, load tested at 1,000
+            concurrent users.
+          </p>
+          <div class="phc-metrics">
+            <div class="phc-metric">
+              <span>0.927</span><small>ROC-AUC</small>
+            </div>
+            <div class="phc-metric">
+              <span>1,000</span><small>Concurrent Users</small>
+            </div>
+            <div class="phc-metric"><span>0</span><small>Downtime</small></div>
+          </div>
+          <div class="phc-tech">
+            <span>MLflow</span><span>DVC</span><span>Airflow</span>
+            <span>XGBoost</span><span>BentoML</span><span>Docker</span
+            ><span>Kubernetes</span>
+          </div>
+          <a
+            href="https://github.com/Kanishka-Msd/mlops-platform"
+            target="_blank"
+            class="btn-watch"
+            style="margin-top: 1.5rem; display: inline-flex"
+          >
+            <i class="fab fa-github"></i> View on GitHub
+          </a>
+        </div>
+      </div>
+
+      <!-- Small project cards -->
+      <div class="projects-row">
+        <div class="proj-card" data-aos>
+          <div class="proj-num">02</div>
+          <h3>Intelligent Document Processing <span>with RAG</span></h3>
+          <p>
+            Document intelligence system using OCR, NLP, and LLMs to extract
+            structured data from invoices, contracts, and forms via an
+            embedding-based RAG pipeline with pgvector.
+          </p>
+          <div class="proj-metrics-row">
+            <div class="proj-metric">
+              <span>95%</span><small>Extraction Accuracy</small>
+            </div>
+          </div>
+          <div class="proj-tech">
+            <span>RAG</span><span>pgvector</span><span>FastAPI</span
+            ><span>OCR</span><span>Docker</span>
+          </div>
+          <a
+            href="https://github.com/Kanishka-Msd/idp-rag"
+            target="_blank"
+            class="proj-link"
+          >
+            <i class="fab fa-github"></i> GitHub
+            <i class="fas fa-arrow-right"></i>
+          </a>
+        </div>
+
+        <div class="proj-card" data-aos>
+          <div class="proj-num">03</div>
+          <h3>Text-to-SQL <span>AI System</span></h3>
+          <p>
+            Natural language to SQL using LangChain and GPT — multi-step agentic
+            orchestration, self-correction feedback, and automatic query retry.
+            Prevents SQL injection in production.
+          </p>
+          <div class="proj-metrics-row">
+            <div class="proj-metric">
+              <span>89%</span><small>Query Accuracy</small>
+            </div>
+            <div class="proj-metric">
+              <span>25+</span><small>Tables Supported</small>
+            </div>
+          </div>
+          <div class="proj-tech">
+            <span>LangChain</span><span>GPT</span><span>FastAPI</span
+            ><span>PostgreSQL</span><span>Docker</span>
+          </div>
+          <div class="proj-link no-link">
+            <i class="fas fa-lock"></i> Private Repository
+          </div>
+        </div>
+      </div>
     </section>
 
     <!-- CONTACT -->
