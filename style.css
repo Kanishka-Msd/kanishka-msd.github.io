@@ -417,3 +417,291 @@ a {
     transform: translateX(-50%) translateY(6px);
   }
 }
+
+/* ─── SKILLS SECTION ─── */
+.skills-section {
+  background: var(--bg2);
+  border-top: 1px solid var(--border);
+  border-bottom: 1px solid var(--border);
+  padding: 3.5rem 4%;
+}
+.skills-container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+.skills-header {
+  display: flex;
+  align-items: baseline;
+  gap: 1rem;
+  margin-bottom: 2rem;
+}
+.skills-header h2 {
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: var(--text-bright);
+}
+.skills-sub {
+  font-size: 0.85rem;
+  color: #b3b3b3;
+}
+.skills-categories {
+  display: flex;
+  flex-direction: column;
+  gap: 1.2rem;
+}
+.skill-cat {
+  display: flex;
+  align-items: flex-start;
+  gap: 1.5rem;
+  flex-wrap: wrap;
+}
+.skill-cat-title {
+  min-width: 170px;
+  font-size: 0.8rem;
+  font-weight: 600;
+  color: #b3b3b3;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  padding-top: 0.35rem;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+.skill-cat-title i {
+  color: var(--red);
+  font-size: 0.75rem;
+}
+.skill-tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+}
+.skill-tags span {
+  background: var(--surface2);
+  border: 1px solid var(--border);
+  color: var(--text);
+  font-size: 0.8rem;
+  font-weight: 500;
+  padding: 0.3rem 0.8rem;
+  border-radius: 20px;
+  transition: var(--transition);
+}
+.skill-tags span:hover {
+  background: var(--red);
+  border-color: var(--red);
+  color: white;
+}
+
+/* ─── CONTENT SECTIONS ─── */
+.content-section {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 5rem 4%;
+}
+.section-label {
+  font-size: 1.4rem;
+  font-weight: 700;
+  color: var(--text-bright);
+  margin-bottom: 1.5rem;
+  display: flex;
+  align-items: center;
+  gap: 0.8rem;
+}
+.section-label::before {
+  content: "";
+  display: block;
+  width: 4px;
+  height: 1.4rem;
+  background: var(--red);
+  border-radius: 2px;
+  flex-shrink: 0;
+}
+
+/* ─── EXPERIENCE CARDS ─── */
+.cards-row {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1.5rem;
+}
+.exp-card {
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  padding: 1.8rem;
+  transition: var(--transition);
+  opacity: 0;
+  transform: translateY(20px);
+}
+.exp-card.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+.exp-card:hover {
+  background: var(--surface2);
+  border-color: #555;
+  transform: translateY(-3px);
+}
+.exp-card-top {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  margin-bottom: 1rem;
+}
+.exp-logo {
+  width: 42px;
+  height: 42px;
+  border-radius: 8px;
+  background: var(--red);
+  color: white;
+  font-weight: 800;
+  font-size: 1.1rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+}
+.exp-logo.v {
+  background: #0a66c2;
+}
+.exp-company {
+  font-size: 0.85rem;
+  font-weight: 700;
+  color: var(--text-bright);
+}
+.exp-period {
+  font-size: 0.75rem;
+  color: #b3b3b3;
+  margin-top: 0.1rem;
+}
+.exp-badge {
+  margin-left: auto;
+  background: rgba(229, 9, 20, 0.15);
+  border: 1px solid rgba(229, 9, 20, 0.4);
+  color: var(--red);
+  font-size: 0.7rem;
+  font-weight: 600;
+  padding: 0.2rem 0.6rem;
+  border-radius: 20px;
+}
+.exp-title {
+  font-size: 1.1rem;
+  font-weight: 700;
+  color: var(--text-bright);
+  margin-bottom: 0.8rem;
+}
+.exp-bullets {
+  list-style: none;
+  margin-bottom: 1rem;
+}
+.exp-bullets li {
+  position: relative;
+  padding-left: 1.1rem;
+  font-size: 0.88rem;
+  color: #b3b3b3;
+  margin-bottom: 0.4rem;
+  line-height: 1.6;
+}
+.exp-bullets li::before {
+  content: "–";
+  position: absolute;
+  left: 0;
+  color: var(--red);
+  font-weight: 700;
+}
+.exp-bullets mark {
+  background: none;
+  color: var(--text-bright);
+  font-weight: 600;
+}
+.exp-tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.4rem;
+}
+.exp-tags span {
+  background: rgba(255, 255, 255, 0.06);
+  border: 1px solid var(--border);
+  color: #b3b3b3;
+  font-size: 0.72rem;
+  padding: 0.2rem 0.6rem;
+  border-radius: 4px;
+}
+
+/* ─── EDUCATION ─── */
+.edu-row {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1.5rem;
+}
+.edu-card {
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  padding: 1.8rem;
+  display: flex;
+  gap: 1.2rem;
+  align-items: flex-start;
+  transition: var(--transition);
+  opacity: 0;
+  transform: translateY(20px);
+}
+.edu-card.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+.edu-card:hover {
+  background: var(--surface2);
+  border-color: #555;
+}
+.edu-card-num {
+  font-size: 0.75rem;
+  font-weight: 800;
+  color: var(--red);
+  background: rgba(229, 9, 20, 0.1);
+  border: 1px solid rgba(229, 9, 20, 0.3);
+  padding: 0.3rem 0.6rem;
+  border-radius: 4px;
+  white-space: nowrap;
+  height: fit-content;
+}
+.edu-card-body h3 {
+  font-size: 1rem;
+  font-weight: 700;
+  color: var(--text-bright);
+  margin-bottom: 0.2rem;
+}
+.edu-card-body p {
+  font-size: 0.85rem;
+  color: var(--red);
+  font-weight: 600;
+  margin-bottom: 0.3rem;
+}
+.edu-card-body span {
+  font-size: 0.78rem;
+  color: #b3b3b3;
+}
+.edu-courses {
+  font-size: 0.78rem;
+  color: #777;
+  margin-top: 0.5rem;
+  line-height: 1.5;
+}
+/* ─── ACCESSIBILITY FIXES ─── */
+.edu-deg {
+  color: #999;
+}
+.exp-period {
+  color: #999;
+}
+.hcard-l {
+  color: #999;
+}
+.sidebar-badge {
+  font-size: 0.75rem;
+}
+.edu-school {
+  color: #ddd;
+}
+.text-dim {
+  color: #999;
+}

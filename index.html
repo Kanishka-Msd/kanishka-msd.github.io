@@ -29,7 +29,6 @@
 
     <!-- HERO -->
     <section id="about" class="hero">
-      <!-- LEFT SIDEBAR -->
       <div class="hero-sidebar">
         <div class="sidebar-photo">
           <img src="Kanish-DP.webp" alt="Kanishka Kopperla" />
@@ -76,8 +75,6 @@
           </div>
         </div>
       </div>
-
-      <!-- RIGHT MAIN -->
       <div class="hero-main">
         <div class="hero-eyebrow">
           <span class="dot-red"></span> AI · ML · LLM Engineer
@@ -127,13 +124,167 @@
           <span>Claude API</span><span>PostgreSQL</span>
         </div>
       </div>
-
       <div class="hero-scroll"><i class="fas fa-chevron-down"></i></div>
     </section>
 
+    <!-- SKILLS -->
+    <section class="skills-section">
+      <div class="skills-container">
+        <div class="skills-header">
+          <h2>Tech Stack</h2>
+          <span class="skills-sub">Tools & Technologies</span>
+        </div>
+        <div class="skills-categories">
+          <div class="skill-cat">
+            <div class="skill-cat-title">
+              <i class="fas fa-brain"></i> ML & AI
+            </div>
+            <div class="skill-tags">
+              <span>Python</span><span>TensorFlow</span><span>PyTorch</span>
+              <span>scikit-learn</span><span>XGBoost</span><span>OpenCV</span
+              ><span>NLP</span>
+            </div>
+          </div>
+          <div class="skill-cat">
+            <div class="skill-cat-title">
+              <i class="fas fa-robot"></i> LLMs & GenAI
+            </div>
+            <div class="skill-tags">
+              <span>LangChain</span><span>LangGraph</span><span>RAG</span>
+              <span>LLaMA</span><span>Ollama</span><span>Claude API</span
+              ><span>Hugging Face</span>
+            </div>
+          </div>
+          <div class="skill-cat">
+            <div class="skill-cat-title">
+              <i class="fas fa-server"></i> Backend & APIs
+            </div>
+            <div class="skill-tags">
+              <span>FastAPI</span><span>Flask</span><span>REST APIs</span>
+              <span>Microservices</span><span>Redis</span>
+            </div>
+          </div>
+          <div class="skill-cat">
+            <div class="skill-cat-title">
+              <i class="fas fa-database"></i> Data & Cloud
+            </div>
+            <div class="skill-tags">
+              <span>PostgreSQL</span><span>MongoDB</span><span>GCP</span>
+              <span>BigQuery</span><span>Airflow</span><span>Pandas</span
+              ><span>SQL</span>
+            </div>
+          </div>
+          <div class="skill-cat">
+            <div class="skill-cat-title">
+              <i class="fas fa-cogs"></i> DevOps & MLOps
+            </div>
+            <div class="skill-tags">
+              <span>Docker</span><span>Kubernetes</span><span>MLflow</span>
+              <span>DVC</span><span>CI/CD</span><span>BentoML</span
+              ><span>GitHub Actions</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
     <!-- EXPERIENCE -->
-    <section id="experience">
-      <h2>Work History</h2>
+    <section id="experience" class="content-section">
+      <div class="section-label">Work History</div>
+      <div class="cards-row">
+        <div class="exp-card" data-aos>
+          <div class="exp-card-top">
+            <div class="exp-logo">A</div>
+            <div>
+              <div class="exp-company">ATTENTION.AD</div>
+              <div class="exp-period">
+                Jun 2025 – Aug 2025 · California, USA
+              </div>
+            </div>
+            <div class="exp-badge">Current</div>
+          </div>
+          <h3 class="exp-title">AI Software Engineer Intern</h3>
+          <ul class="exp-bullets">
+            <li>
+              Engineered AI-powered data pipelines in Python and SQL to automate
+              structured data ingestion and validation.
+            </li>
+            <li>
+              Integrated ML models for anomaly detection,
+              <mark>reducing manual review effort by 50%</mark>.
+            </li>
+            <li>
+              Designed automated data quality checks, eliminating manual
+              validation across hundreds of daily records.
+            </li>
+          </ul>
+          <div class="exp-tags">
+            <span>Python</span><span>SQL</span><span>ML Pipelines</span
+            ><span>Agile/Scrum</span>
+          </div>
+        </div>
+
+        <div class="exp-card" data-aos>
+          <div class="exp-card-top">
+            <div class="exp-logo v">V</div>
+            <div>
+              <div class="exp-company">VIZDALE</div>
+              <div class="exp-period">Jun 2022 – Feb 2024 · Chennai, India</div>
+            </div>
+          </div>
+          <h3 class="exp-title">Software Engineer</h3>
+          <ul class="exp-bullets">
+            <li>
+              Built production-grade REST APIs using Python and FastAPI for
+              reliable data exchange across services.
+            </li>
+            <li>
+              Developed LLM-powered RAG workflows with embeddings and vector
+              search, <mark>improving retrieval by 35%</mark>.
+            </li>
+            <li>
+              Optimized PostgreSQL queries,
+              <mark>reducing API latency by 30%</mark>.
+            </li>
+            <li>
+              Containerized microservices with Docker and maintained CI/CD
+              pipelines via GitHub Actions.
+            </li>
+          </ul>
+          <div class="exp-tags">
+            <span>FastAPI</span><span>RAG</span><span>PostgreSQL</span
+            ><span>Docker</span><span>CI/CD</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- EDUCATION -->
+      <div class="section-label" style="margin-top: 3rem">Education</div>
+      <div class="edu-row">
+        <div class="edu-card" data-aos>
+          <div class="edu-card-num">M.S.</div>
+          <div class="edu-card-body">
+            <h3>Portland State University</h3>
+            <p>Computer Science · GPA 3.8</p>
+            <span>Sep 2024 – Present</span>
+            <div class="edu-courses">
+              AI · Machine Learning · LLMs · Data Engineering · Software
+              Engineering
+            </div>
+          </div>
+        </div>
+        <div class="edu-card" data-aos>
+          <div class="edu-card-num">B.Tech</div>
+          <div class="edu-card-body">
+            <h3>Anna University</h3>
+            <p>Information Technology · GPA 3.5</p>
+            <span>Jun 2020 – May 2024</span>
+            <div class="edu-courses">
+              DSA · Agile · Database Systems · OOP using Python
+            </div>
+          </div>
+        </div>
+      </div>
     </section>
 
     <!-- PROJECTS -->
