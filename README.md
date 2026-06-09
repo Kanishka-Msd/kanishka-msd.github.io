@@ -40,14 +40,15 @@ open index.html
 4. Site will be live at `https://kanishka-msd.github.io`
 
 ## Project Structure
-
+```
 portfolio/
-├── index.html # Main single-page site
-├── style.css # All styles
-├── script.js # All JavaScript interactivity
-├── Kanish-DP.webp # Profile photo
-├── AI-KANISHKA.pdf # Resume
-└── README.md # Project documentation
+├── index.html        # Main single-page site
+├── style.css         # All styles
+├── script.js         # All JavaScript interactivity
+├── Kanish-DP.webp    # Profile photo
+├── AI-KANISHKA.pdf   # Resume
+└── README.md         # Project documentation
+```
 
 ## Outside Sources
 
